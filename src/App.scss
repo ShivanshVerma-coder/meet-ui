@@ -1,0 +1,27 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: salmon;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .children {
+      background-color: sandybrown;
+      border: 1px solid black;
+      margin: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
