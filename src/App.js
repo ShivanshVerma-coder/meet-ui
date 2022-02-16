@@ -6,10 +6,10 @@ function App() {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setWidth(findFlex(members));
+    setWidth(findWidth(members));
   }, [members]);
 
-  const findFlex = (n) => {
+  const findWidth = (n) => {
     let x = Math.ceil(n / Math.floor(Math.sqrt(n)));
     return parseInt(Math.floor(100 / x)); // assuming 100vw is the width of the container--->replace 100 by desired vw value
   };
